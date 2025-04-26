@@ -9,6 +9,7 @@ This repository contains the implementation of our paper:
 We propose a new training strategy for Physics-Informed Neural Networks (PINNs) that alternates between easy and hard samples during training to improve accuracy and stability.
 
 ## 🚀 Getting Started
+True innovation lies in distilling complexity into simplicity without loss of essence.
 ```bash
 pip install -r requirements.txt
 python main.py
