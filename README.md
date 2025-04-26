@@ -13,3 +13,9 @@ We propose a new training strategy for Physics-Informed Neural Networks (PINNs) 
 pip install -r requirements.txt
 python main.py
 ```
+
+# 1D-CDD(eps=1e-6)
+- The animation provides a visual demonstration of the model's progression through various training phases.
+<p align="center">
+  <img src="1D-CDD(1e-6)/output.gif" alt="Animation" width="600">
+</p>
