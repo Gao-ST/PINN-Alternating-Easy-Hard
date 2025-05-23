@@ -225,30 +225,29 @@ def train_StageII(
 
 
 for epoch in range(epochs):
-    for batch_X, traget_X in trainloader:
-        start = time.time()
-        model, loss_value, col_weights, u_weights = train_StageI(
-            data,
-            x_lb,
-            x_ub,
-            col_weights,
-            u_weights,
-            Partial_D,
-            pde,
-            loss,
-            inner_epoch=10,
-        )
-        model, loss_value, col_weights, u_weights = train_StageII(
-            data,
-            x_lb,
-            x_ub,
-            col_weights,
-            u_weights,
-            Partial_D,
-            pde,
-            loss,
-            inner_epoch=1,
-        )
+    start = time.time()
+    model, loss_value, col_weights, u_weights = train_StageI(
+        data,
+        x_lb,
+        x_ub,
+        col_weights,
+        u_weights,
+        Partial_D,
+        pde,
+        loss,
+        inner_epoch=10,
+    )
+    model, loss_value, col_weights, u_weights = train_StageII(
+        data,
+        x_lb,
+        x_ub,
+        col_weights,
+        u_weights,
+        Partial_D,
+        pde,
+        loss,
+        inner_epoch=1,
+    )
     scheduler.step()
     p = np.linspace(0, 1, 1001)
     p = p[(p != 0) & (p != 1)]
