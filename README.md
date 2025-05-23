@@ -1,12 +1,12 @@
 # PINN-Alternating-Easy-Hard
 This repository contains the implementation of our paper:
 
-**Consistent PINN Accuracy via Alternating Easy-Hard Training**
+**More Consistent PINN Accuracy via Alternating Easy-Hard Training**
 
-📄 Paper: Consistent PINN Accuracy via Alternating Easy-Hard Training
+📄 Paper: More Consistent PINN Accuracy via Alternating Easy-Hard Training
 
 ## 📌 Overview
-We propose a new training strategy for Physics-Informed Neural Networks (PINNs) that alternates between easy and hard samples during training to improve accuracy and stability.
+Physics-informed neural networks (PINNs) have recently emerged as a prominent paradigm for solving partial differential equations (PDEs), yet their training strategies remain underexplored. While hard prioritization methods inspired by finite element methods are widely adopted, recent research suggests that easy prioritization can also be effective. Nevertheless, we find that both approaches exhibit notable trade-offs and inconsistent performance across PDE types. To address this issue, we develop a hybrid strategy that combines the strengths of hard and easy prioritization through an alternating training algorithm. On PDEs with steep gradients, nonlinearity, and high dimensionality, the proposed method achieves consistently high accuracy, with relative $L^2$ errors mostly in the range of $\mathcal{O}(10^{-5})$ to $\mathcal{O}(10^{-6})$, significantly surpassing baseline methods. Moreover, it offers greater reliability across diverse problems, whereas compared approaches often suffer from variable accuracy depending on the PDE. This work provides new insights into designing hybrid training strategies to enhance the performance and robustness of PINNs. 
 
 ## 🚀 Getting Started
 
