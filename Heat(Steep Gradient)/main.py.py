@@ -216,14 +216,13 @@ def train_StageII(
 
 
 for epoch in range(epochs):
-    for X, y in trainloader:
-        start = time.time()
-        model, loss_value, col_weights, u_weights = train_StageI(
-            data, xb, ub, col_weights, u_weights, Partial_D, pde, loss, inner_epoch=10
-        )
-        model, loss_value, col_weights, u_weights = train_StageII(
-            data, xb, ub, col_weights, u_weights, Partial_D, pde, epoch, inner_epoch=1
-        )
+    start = time.time()
+    model, loss_value, col_weights, u_weights = train_StageI(
+        data, xb, ub, col_weights, u_weights, Partial_D, pde, loss, inner_epoch=10
+    )
+    model, loss_value, col_weights, u_weights = train_StageII(
+        data, xb, ub, col_weights, u_weights, Partial_D, pde, epoch, inner_epoch=1
+    )
     scheduler.step()
 
     p = np.linspace(-1, 1, 201)
