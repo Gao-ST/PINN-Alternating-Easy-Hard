@@ -44,7 +44,7 @@ python main.py
 
 - The animation provides a visual demonstration of the model's progression through various training phases.
 <p align="center">
-  <img src="./1D-CDD.gif" alt="Animation" width="600">
+  <img src="./1D-CDD(1e-6)/1D-CDD.gif" alt="Animation" width="600">
 </p>
 
 # Allen-Cahn
