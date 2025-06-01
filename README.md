@@ -17,7 +17,7 @@ python main.py
 ```
 
 # Heat (Steep gradient)
-- Visualization of a source term at $ \alpha=0.11 $ used in the heat conduction equation.
+- Visualization of a source term at $\alpha=0.11$ used in the heat conduction equation.
 - **Left:** 3D surface of the source term $f(x,t)$, exhibiting sharp localized peaks and steep gradients, with value ranges exceeding $10^5$.
 - **Right:** 1D slice of $f(x,t)$ along $x = 0$, showing highly nontrivial temporal behavior.
 - Such source terms introduce strong local features and multiscale variations in the solution, posing significant challenges for standard PINNs to learn effectively.
@@ -28,7 +28,7 @@ python main.py
 
 
 # Helmholtz
-- Visualization of a source term at $ \alpha=0.11 $ used in the Helmholtz equation.
+- Visualization of a source term at $k_0=4\cdot\pi$ used in the Helmholtz equation.
 <div align="center">
 <img src="./Image/Helm.png" width="600"/>
 </div>
